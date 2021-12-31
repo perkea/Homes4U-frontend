@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.card{
+  background: transparent;
+      box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px 0 rgba(255, 255, 255, 0.55);
+  border-radius: 40px;
+  padding: 4px 30px 20px;
+  min-height: 380px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  margin-top: 20px;
+  height: 500px;  
+}
+
+.cardHome{
+  background: transparent;
+      box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.2),
+    -8px -8px 18px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  padding: 4px 30px 20px;
+  min-height: 380px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(192, 60, 60, 0.25));
+  margin-top: 70px;
+  height: 700px;  
+}

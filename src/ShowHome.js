@@ -3,6 +3,7 @@ import AppNavBar from "./AppNavBar";
 import CardForEachHome from "./CardForEachHome";
 import HomeImage from "./HomeImage";
 import "./App.css";
+import URL from "./config"
 
 class ShowHome extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class ShowHome extends React.Component {
   }
   componentDidMount() {
     fetch(
-      "http://localhost:5000/propertyId/" + encodeURIComponent(this.state.id)
+      URL +"/propertyId/" + encodeURIComponent(this.state.id)
     )
       .then((res) => res.json())
       .then(

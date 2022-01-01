@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import HomeImage from "./HomeImage";
 import './App.css';
+import URL from "./config"
 
 
 class Homes extends React.Component {
@@ -18,7 +19,7 @@ class Homes extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:5000/results")
+    fetch(URL + "/results")
       .then((res) => res.json())
       .then(
         (result) => {
